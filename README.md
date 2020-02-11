@@ -1,6 +1,4 @@
-# Assignment Template
-
-This repository is for 304 GAME REVIEW SYSTEM.
+# This repository is for GAME REVIEW SYSTEM.
 
  . Logged-in users should be able to browse a list of games (including publisher, title, summary, detailed description and photos).
  . Users should be able to add reviews.

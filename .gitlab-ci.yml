@@ -1,0 +1,240 @@
+image: node:latest
+
+stages:
+  - code-testing
+  - staging-server
+  - acceptance-testing
+
+linting:
+  stage: code-testing
+  script:
+    - npm install
+    - npm run linter
+
+authenticate_dependency-checks:
+  stage: code-testing
+  before_script:
+    - cd server/authenticate
+  script:
+    - npm install
+    - npm run dependency
+    
+users_dependency-checks:
+  stage: code-testing
+  before_script:
+    - cd server/user
+  script:
+    - npm install
+    - npm run dependency
+    
+comments_dependency-checks:
+  stage: code-testing
+  before_script:
+    - cd server/user
+  script:
+    - npm install
+    - npm run dependency
+    
+games_dependency-checks:
+  stage: code-testing
+  before_script:
+    - cd server/games
+  script:
+    - npm install
+    - npm run dependency
+    
+reviews_dependency-checks:
+  stage: code-testing
+  before_script:
+    - cd server/reviews
+  script:
+    - npm install
+    - npm run dependency
+
+duplication:
+  stage: code-testing
+  script:
+    - npm install
+    - npm run duplication
+
+reviews_unit-testing:
+  stage: code-testing
+  before_script:
+    - cd server/reviews
+  script:
+  - npm install
+  - npm test
+
+authenticate_unit-testing:
+  stage: code-testing
+  before_script:
+    - cd server/authenticate
+  script:
+  - npm install
+  - npm test
+  
+comments_unit-testing:
+  stage: code-testing
+  before_script:
+    - cd server/comments
+  script:
+  - npm install
+  - npm test 
+
+users_unit-testing:
+  stage: code-testing
+  before_script:
+    - cd server/user
+  script:
+  - npm install
+  - npm test 
+
+games_unit-testing:
+  stage: code-testing
+  before_script:
+    - cd server/games
+  script:
+  - npm install
+  - npm test 
+  
+games_code-coverage:
+  stage: code-testing
+  before_script:
+    - cd server/games
+  script:
+    - npm install
+    - npm run coverage
+    
+reviews_code-coverage:
+  stage: code-testing
+  before_script:
+    - cd server/reviews
+  script:
+    - npm install
+    - npm run coverage
+    
+users_code-coverage:
+  stage: code-testing
+  before_script:
+    - cd server/user
+  script:
+    - npm install
+    - npm run coverage
+
+comments_code-coverage:
+  stage: code-testing
+  before_script:
+    - cd server/comments
+  script:
+    - npm install
+    - npm run coverage
+    
+authenticate_code-coverage:
+  stage: code-testing
+  before_script:
+    - cd server/authenticate
+  script:
+    - npm install
+    - npm run coverage 
+    
+authenticate_coverage-report:
+  stage: staging-server
+  before_script:
+    - cd server/authenticate
+  script:
+    - npm install
+    - npm run coverage
+  artifacts:
+    paths:
+      - docs
+    expire_in: 30 days
+  only:
+    - master
+    
+reviews_coverage-report:
+  stage: staging-server
+  before_script:
+    - cd server/reviews
+  script:
+    - npm install
+    - npm run coverage
+  artifacts:
+    paths:
+      - docs
+    expire_in: 30 days
+  only:
+    - master
+    
+users_coverage-report:
+  stage: staging-server
+  before_script:
+    - cd server/user
+  script:
+    - npm install
+    - npm run coverage
+  artifacts:
+    paths:
+      - docs
+    expire_in: 30 days
+  only:
+    - master
+
+games_coverage-report:
+  stage: staging-server
+  before_script:
+    - cd server/games
+  script:
+    - npm install
+    - npm run coverage
+  artifacts:
+    paths:
+      - docs
+    expire_in: 30 days
+  only:
+    - master  
+
+comments_coverage-report:
+  stage: staging-server
+  before_script:
+    - cd server/comments
+  script:
+    - npm install
+    - npm run coverage
+  artifacts:
+    paths:
+      - docs
+    expire_in: 30 days
+  only:
+    - master
+    
+
+
+# deploy-staging-server:
+#   stage: staging-server
+#   script:
+#   - apt-get update -qy
+#   - apt-get install -y ruby ruby-dev rubygems-integration
+#   - gem install dpl
+#   - dpl --provider=heroku --app=notes-api-test --api-key=95023c27-5a9d-4250-a3fd-d2e19e0dac02
+#   only:
+#   - master
+
+# acceptance-tests:
+#   stage: acceptance-testing
+#   script:
+#     - npm install --only=dev
+#     - npm run test
+#   only:
+#     - master
+
+# https://docs.gitlab.com/ce/ci/examples/test-and-deploy-python-application-to-heroku.html
+
+# production:
+#   type: deploy
+#   script:
+#   - apt-get update -qy
+#   - apt-get install -y ruby-dev
+#   - gem install dpl
+#   - dpl --provider=heroku --app=gitlab-ci-python-test-prod --api-key=$HEROKU_PRODUCTION_API_KEY
+#   only:
+#   - tags

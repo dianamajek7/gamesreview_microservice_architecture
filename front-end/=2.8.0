@@ -1,0 +1,4 @@
++ typescript@3.7.2
+added 1 package from 1 contributor and audited 911174 packages in 50.506s
+found 4 vulnerabilities (1 moderate, 3 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

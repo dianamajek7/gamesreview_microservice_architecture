@@ -1,0 +1,7 @@
+path:
+  - "/."
+languages:
+  - javascript
+exclude:
+  - "**/node_modules/**"
+reporter: json

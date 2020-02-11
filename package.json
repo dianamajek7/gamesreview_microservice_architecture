@@ -1,0 +1,56 @@
+{
+  "name": "majekodr",
+  "version": "1.0.0",
+  "description": "This repository contains the base files for the assignment. You will need to create a _private duplicate_ in your module organisation. Carry out the following steps, taken from the [GitHub documentation](https://help.github.com/en/enterprise/2.16/user/articles/duplicating-a-repository):",
+  "main": "index.js",
+  "scripts": {
+    "acceptance": "jest --runInBand",
+    "duplication": "node_modules/.bin/jscpd -p . --config .cpd.yml",
+    "linter": "node_modules/.bin/eslint server/"
+  },
+  "pre-commit": [
+    "linter",
+    "duplication",
+    "dependency"
+  ],
+  "author": "Rukiyat Majekodunmi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.coventry.ac.uk/340CT-1920SEPJAN/majekodr_back-end.git"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "eslint": "^6.6.0",
+    "eslint-config-dev": "^2.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-sinon": "^3.0.1",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-ie11": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-local-rules": "^0.1.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "featurebook": "0.0.32",
+    "jest": "^24.9.0",
+    "jest-image-snapshot": "^2.11.0",
+    "jest-puppeteer": "^4.3.0",
+    "jscpd": "^0.6.25",
+    "puppeteer": "^1.20.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "projects": [
+      "<rootDir>/jest-test.config.js"
+    ],
+    "testMatch": [
+      "**/*.steps.js"
+    ],
+    "preset": "jest-puppeteer"
+  }
+}

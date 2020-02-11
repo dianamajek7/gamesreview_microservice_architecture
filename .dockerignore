@@ -1,0 +1,13 @@
+# node_modules/*
+server/user/node_modules/
+server/games/node_modules/
+server/comments/node_modules/
+server/reviews/node_modules/
+server/authenticate/node_modules/
+front-end/node_modules/
+npm-debug.log
+*.log
+docs/
+.git
+.gitignore
+.DS_Store

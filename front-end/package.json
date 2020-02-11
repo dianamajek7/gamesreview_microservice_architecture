@@ -1,0 +1,70 @@
+{
+  "name": "majekodr_front-end",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@jbuschke/formik-antd": "^1.5.4",
+    "antd": "^3.24.2",
+    "antd-form-redux": "^3.0.28",
+    "babel-plugin-import": "^1.12.2",
+    "bootstrap": "^4.3.1",
+    "bootstrap-social": "^5.1.1",
+    "customize-cra": "^0.8.0",
+    "email-validator": "^2.0.4",
+    "eslint": "^6.5.1",
+    "formik": "^1.5.8",
+    "husky": "^3.0.9",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.4.2",
+    "node-sass-chokidar": "^1.3.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "react": "^16.10.2",
+    "react-app-rewired": "^2.1.4",
+    "react-dom": "^16.10.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-recaptcha": "^2.3.10",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.7.2",
+    "yup": "^0.27.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/ && react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.coventry.ac.uk/340CT-1920SEPJAN/majekodr.git"
+  },
+  "author": "Rukiyat Majekodunmi"
+}

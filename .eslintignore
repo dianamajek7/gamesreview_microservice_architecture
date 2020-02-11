@@ -1,0 +1,10 @@
+node_modules/
+docs/
+server/mysql-prescripts/**
+server/comments/node_modules/
+server/games/node_modules/
+server/authenticate/node_modules/
+server/reviews/node_modules/
+server/user/node_modules/
+test/
+!.*

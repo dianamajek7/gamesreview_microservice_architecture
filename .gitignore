@@ -1,0 +1,44 @@
+# NodeJS related files and directoriess
+.DS_Store
+node_modules/
+server/my-sql-data/comments_db_Data
+server/my-sql-data/games_db_Data
+server/my-sql-data/reviews_db_Data
+server/my-sql-data/users_db_Data
+
+package-lock.json
+.node-persist/
+data/
+coverage/
+docs/
+sessions/
+screenshots/
+__image_snapshots_/
+__diff_output__/
+trace/
+
+# sqlite databases
+*.db
+
+# Mac spotlight files
+.DS_Store
+
+# Windows thumbnail db
+Thumbs.db
+website.db
+*snap.png
+*diff.png
+*trace.json
+tests_output
+*.0x
+
+*.pptx
+*.mp4
+
+# IDE setting files
+*.codio
+*.c9
+*.log
+.env
+vrt/diff
+vrt/latest

@@ -2,6 +2,7 @@
  * This project was developed using JavaScript and Node.js for backend
    * React for the front-end
    * Jest and puppetter for testing
+   * Docker is also used to compose each microservice component in a container following a microservice architecture
  * Logged-in users should be able to browse a list of games (including publisher, title, summary, detailed description and photos).
  * Users should be able to add reviews.
 

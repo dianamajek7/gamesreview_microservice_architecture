@@ -20,7 +20,7 @@
     "url": "https://github.coventry.ac.uk/340CT-1920SEPJAN/majekodr_back-end.git"
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "eslint": "^6.6.0",
     "eslint-config-dev": "^2.0.0",
     "eslint-plugin-import": "^2.18.2"

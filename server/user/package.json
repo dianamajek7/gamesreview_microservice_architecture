@@ -25,7 +25,7 @@
   "dependencies": {
     "@koa/cors": "^2.2.3",
     "bcrypt-promise": "^2.0.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.8.2",
@@ -42,7 +42,7 @@
     "eslint-config-sinon": "^3.0.1",
     "eslint-plugin-local-rules": "^0.1.1",
     "jest": "^24.9.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "jsdoc": "^3.6.3",
     "sinon": "^7.5.0",
     "frisby": "^2.0.10",

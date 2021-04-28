@@ -15,5 +15,4 @@
  * Reviewers should be able to upload screenshots of the game they are reviewing.
  * Users can comment on other reviews.
 
-
-
+* A walkthrough of the application running: https://drive.google.com/file/d/1N5KJgeXPstbZcRQz4kOEc65C5pSPcz6T/view?usp=sharing

@@ -18,6 +18,6 @@
 * A walkthrough of the application running: https://drive.google.com/file/d/1N5KJgeXPstbZcRQz4kOEc65C5pSPcz6T/view?usp=sharing
 
 
-#### Note: To spin up the docker and its containers perform the following steps
+#### Note: To spin up the docker and its containers perform the following steps:
   * under server/user uninstall bcrypt locally from node_modules in terminal using command: npm uninstall bcrypt
   * The Dockerfile within user directory contians a command to reinstall bcrypt, this is to ensure when spinning up the containers the user microservice installs bcrypt within its folder directory and avoid causing an error

@@ -40,5 +40,6 @@ tests_output
 *.c9
 *.log
 .env
+.idea/
 vrt/diff
 vrt/latest

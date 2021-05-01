@@ -5,10 +5,9 @@ COPY . /src
 WORKDIR /src
 
 COPY package*.json ./
-
+                                                         
+RUN npm install bcrypt@latest --save
 RUN npm install --production
-
-RUN npm rebuild bcrypt --build-from-source
 
 EXPOSE 3035
 

@@ -1,4 +1,4 @@
-# node_modules/*
+node_modules/*
 server/user/node_modules/
 server/games/node_modules/
 server/comments/node_modules/

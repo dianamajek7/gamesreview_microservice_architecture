@@ -1,4 +1,4 @@
-# This repository is for GAME REVIEW SYSTEM.
+# This repository is for GAME REVIEW SYSTEM
  * This project was developed using JavaScript and Node.js for backend
    * React for the front-end
    * Jest and puppetter for testing
@@ -13,6 +13,11 @@
 
  * In addition, the site should be full-text searchable.
  * Reviewers should be able to upload screenshots of the game they are reviewing.
- * Users can comment on other reviews.
+ * Users can comment on other reviews
 
 * A walkthrough of the application running: https://drive.google.com/file/d/1N5KJgeXPstbZcRQz4kOEc65C5pSPcz6T/view?usp=sharing
+
+
+#### Note: To spin up the docker and its containers perform the following steps
+  * under server/user uninstall bcrypt locally from node_modules in terminal using command: npm uninstall bcrypt
+  * The Dockerfile within user directory contians a command to reinstall bcrypt, this is to ensure when spinning up the containers the user microservice installs bcrypt within its folder directory and avoid causing an error

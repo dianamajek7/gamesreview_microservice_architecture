@@ -18,14 +18,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.coventry.ac.uk/340CT-1920SEPJAN/majekodr.git"
+    "url": "https://github.com/dianamajek7/gamesreview_microservice_architecture.git"
   },
   "author": "Rukiyat Majekodunmi",
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^2.2.3",
     "bcrypt-promise": "^2.0.0",
-    "bcrypt": "^3.0.6",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.8.2",
@@ -36,20 +35,19 @@
   },
   "devDependencies": {
     "@shopify/jest-koa-mocks": "^2.1.9",
-    "eslint": "^6.6.0",
     "coverage": "^0.4.1",
     "dependency-check": "^2.9.2",
+    "eslint": "^6.6.0",
     "eslint-config-sinon": "^3.0.1",
     "eslint-plugin-local-rules": "^0.1.1",
-    "jest": "^24.9.0",
-    "bcrypt": "^3.0.6",
-    "jsdoc": "^3.6.3",
-    "sinon": "^7.5.0",
     "frisby": "^2.0.10",
     "istanbul": "^0.4.5",
     "jasmine": "^2.99.0",
     "jasmine-console-reporter": "^2.0.1",
     "jasmine-node": "^3.0.0",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "sinon": "^7.5.0",
     "sqlite-async": "^1.0.12",
     "supertest": "^4.0.2"
   },

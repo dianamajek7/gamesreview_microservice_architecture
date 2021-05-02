@@ -123,11 +123,26 @@ class ReviewComments extends Component {
               return {noOfLikes: newItems};
           })
 
+          if(this.state.noOfLikes[item.Id] === 1) {
+            this.setState(prevState => {
+              const newItems = [...prevState.noOfLikes];
+              newItems[item.Id]= 0 ;
+              return {noOfLikes: newItems};
+            })
+          }
+
+
         } else if (this.props.errorMessage) {
             message.error(`${this.props.errorMessage}`);
             this.props.clearErrors();
         }
-    } 
+    } else {
+        this.setState(prevState => {
+          const newItems = [...prevState.noOfLikes];
+          newItems[item.Id]= 0 ;
+          return {noOfLikes: newItems};
+        })
+    }
 
   };
 

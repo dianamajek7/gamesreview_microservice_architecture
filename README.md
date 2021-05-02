@@ -19,7 +19,7 @@
 
 * A walkthrough of the application running [__Click here...__](https://drive.google.com/file/d/1N5KJgeXPstbZcRQz4kOEc65C5pSPcz6T/view?usp=sharing)
 
-### Prerequistes to run application either via docker or locally
+### Prerequisites to run application either via docker or locally
 * __Ensure to call this endpoint once__ in Postman/SoapUI, this to ensure to create a new databse for the user 
   * POST Method, Body empty{}, URL: http://localhost:3001/api/v1.0/user/admin/create_user_db
 

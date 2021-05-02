@@ -1,4 +1,4 @@
-# This repository is for GAME REVIEW SYSTEM
+# GAME REVIEW SYSTEM
  * This project was developed using JavaScript and Node.js for backend
    * React for the front-end
    * Jest and puppetter for testing

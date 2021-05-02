@@ -19,11 +19,10 @@
 
 * A walkthrough of the application running [__Click here...__](https://drive.google.com/file/d/1N5KJgeXPstbZcRQz4kOEc65C5pSPcz6T/view?usp=sharing)
 
-### Prerequisites to run application either via docker or locally
-* __Ensure to call this endpoint once__ in Postman/SoapUI, this to ensure to create a new databse for the user 
-  * POST Method, Body empty{}, URL(port number good defer locally on docker use 3001): http://localhost:3001/api/v1.0/user/admin/create_user_db
+### Prerequisites to run the application locally
+* Run this commend in the route level of the folder ./server/user __npm install bcrypt@latest --save__, this to ensure the module bcrypt is installed and present in package.json file
 
-### Note: To spin up the docker and its containers perform the following steps:
-  * Under server/user uninstall bcrypt locally from node_modules in terminal using command: npm uninstall bcrypt
-    * Once completed bcrypt should not be present in the package.json
-  * The Dockerfile within user directory contians a command to reinstall bcrypt, this is to ensure when spinning up the containers the user microservice installs bcrypt within its folder directory and avoid causing an error
+### Prerequisites to spin the application up within a docker environment
+  * Locate the rout of this folder ./server/user uninstall bcrypt locally in terminal by using the command __npm uninstall bcrypt__
+    * Once completed bcrypt should not be present in the package.json and in the node_modules folder
+  * The Dockerfile within user directory contians the command 'npm install bcrypt@latest --save' to reinstall bcrypt, this is to ensure when spinning up the containers the user microservice installs bcrypt within its folder directory and avoid causing an error

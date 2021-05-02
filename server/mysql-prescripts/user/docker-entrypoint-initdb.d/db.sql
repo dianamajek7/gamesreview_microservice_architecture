@@ -1,7 +1,7 @@
 grant all privileges on *.* to 'root'@'%' identified by 'password';
 flush privileges;
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+CREATE DATABASE IF NOT EXISTS users_db;
 
 CREATE TABLE IF NOT EXISTS User (Id INT NOT NULL AUTO_INCREMENT,
         Username VARCHAR(32) NOT NULL,

@@ -36,7 +36,7 @@ VALUES (1, 'Warfare', 1, 'Warfare Developer', 'Warfare is a arena shoot game', '
 (4, 'Blackops', 1, 'Blackops Developer', 'Spend all day playing', 'Drive cars, have mission and shooting and stealing cars', 'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/220px-CoD_Black_Ops_cover.png', 4.025),
 (5, 'Peppa Pig', 5, 'Peppa Pig Developer', 'Spend all day playing', 'Drive cars, have mission', 'https://www.sundaypost.com/wp-content/uploads/sites/13/2019/11/Peppa-Pig-in-Scots-PR-eOne-1.jpg', 0),
 (6, 'Witcher3', 3, 'Witcher3 Developer', 'Spend all day playing', 'Drive cars, have mission', 'https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png', 0),
-(7, 'CS Girl', 4, 'CS Girl Developer', 'Spend all day playing', 'Drive cars, have mission', 'https://files.gamebanana.com/img/ss/guis/_1718-.jpg', 3.05);
+(7, 'CS Girl', 4, 'CS Girl Developer', 'Spend all day playing', 'Drive cars, have mission', 'https://cdn.akamai.steamstatic.com/steam/apps/273110/capsule_616x353_alt_assets_6.jpg?t=1618974915', 3.05),
 (8, 'Habbo', 2, 'Sony Developer', 'Spend all day playing', 'Drive cars, have mission', 'https://vignette.wikia.nocookie.net/habbo/images/f/f2/Game_info_feature.png/revision/latest?cb=20120908172715&path-prefix=en', 3.05);
 
 INSERT INTO `Rate`(`userId`, `gameId`, `rate`) 

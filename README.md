@@ -21,7 +21,7 @@
 
 ### Prerequisites to run application either via docker or locally
 * __Ensure to call this endpoint once__ in Postman/SoapUI, this to ensure to create a new databse for the user 
-  * POST Method, Body empty{}, URL: http://localhost:3001/api/v1.0/user/admin/create_user_db
+  * POST Method, Body empty{}, URL(port number good defer locally on docker use 3001): http://localhost:3001/api/v1.0/user/admin/create_user_db
 
 ### Note: To spin up the docker and its containers perform the following steps:
   * Under server/user uninstall bcrypt locally from node_modules in terminal using command: npm uninstall bcrypt
